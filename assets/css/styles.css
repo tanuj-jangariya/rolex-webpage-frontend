@@ -1,11 +1,8 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+
 :root {
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
   --first-color: hsl(31, 100%, 70%);
   --button-color: hsl(0, 0%, 17%);
   --button-color-alt: hsl(0, 0%, 21%);
@@ -16,7 +13,7 @@
   --container-color: #fff;
   --border-color: hsl(0, 0%, 94%);
 
-  /*========== Font and typography ==========*/
+ 
   --body-font: 'Roboto', sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -26,11 +23,11 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+ 
   --font-medium: 500;
   --font-bold: 700;
 
-  /*========== Margenes Bottom ==========*/
+
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
   --mb-1: 1rem;
@@ -39,7 +36,7 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
 
-  /*========== z index ==========*/
+  
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -56,7 +53,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -78,7 +74,6 @@ body {
   margin: 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  /*For animation dark mode*/
   transition: .4s;
 }
 
@@ -106,8 +101,6 @@ button {
   outline: none;
 }
 
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color: hsl(31, 76%, 74%);
   --button-color: hsl(0, 0%, 24%);
@@ -119,17 +112,14 @@ body.dark-theme {
   --border-color: hsl(0, 0%, 20%);
 }
 
-/*========== Button Dark/Light ==========*/
+
 .change-theme {
   color: var(--title-color);
   font-size: 1.25rem;
   cursor: pointer;
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
-==========*/
+
 .dark-theme .change-theme,
 .dark-theme .nav__toggle,
 .dark-theme .nav__shop,
@@ -151,7 +141,7 @@ body.dark-theme {
   background: hsl(0, 0%, 30%);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+
 .container {
   max-width: 1024px;
   margin-left: var(--mb-1-5);
@@ -191,7 +181,7 @@ body.dark-theme {
   background-color: var(--first-color);
 }
 
-/*=============== HEADER & NAV ===============*/
+
 .header {
   width: 100%;
   background: transparent;
@@ -199,7 +189,7 @@ body.dark-theme {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  /*For animation dark mode*/
+  
   transition: .4s;
 }
 
@@ -282,23 +272,20 @@ body.dark-theme {
   cursor: pointer;
 }
 
-/* Show menu */
 .show-menu {
   right: 0;
 }
 
-/* Change background header */
 .scroll-header {
   background-color: var(--body-color);
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, .10);
 }
 
-/* Active link */
+
 .active-link {
   color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
 .home__container {
   position: relative;
   row-gap: 2.5rem;
@@ -366,7 +353,6 @@ body.dark-theme {
   box-shadow: 0 12px 24px hsla(0, 0%, 10%, .2);
 }
 
-/*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
   background-color: var(--button-color);
@@ -393,7 +379,6 @@ body.dark-theme {
   padding: 1rem 1.5rem;
 }
 
-/*=============== FEATURED ===============*/
 .featured__container {
   row-gap: 2.5rem;
 }
@@ -497,7 +482,7 @@ body.dark-theme {
   top: -3rem;
 }
 
-/*=============== PRODUCTS ===============*/
+
 .products__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -654,7 +639,6 @@ body.dark-theme {
   left: 4rem;
 }
 
-/*=============== NEW ===============*/
 .new__card {
   position: relative;
   text-align: center;
@@ -730,7 +714,7 @@ body.dark-theme {
   margin-bottom: var(--mb-1-5);
 }
 
-/*=============== NEWSLETTER ===============*/
+
 .newsletter__bg {
   background-color: var(--first-color);
   padding: 3rem 1.5rem;
@@ -762,7 +746,7 @@ body.dark-theme {
   color: hsl(0, 0%, 15%);
 }
 
-/*=============== FOOTER ===============*/
+
 .footer__container {
   row-gap: 2rem;
   border-bottom: 1px solid var(--border-color);
@@ -811,7 +795,7 @@ body.dark-theme {
   color: var(--text-color-light);
 }
 
-/*=============== SCROLL UP ===============*/
+
 .scrollup {
   position: fixed;
   right: 1rem;
@@ -834,12 +818,12 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-/* Show Scroll Up*/
+
 .show-scroll {
   bottom: 3rem;
 }
 
-/*=============== SCROLL BAR ===============*/
+
 ::-webkit-scrollbar {
   width: .6rem;
   background: hsl(0, 0%, 74%);
@@ -849,7 +833,7 @@ body.dark-theme {
   background: hsl(0, 0%, 17%);
 }
 
-/*=============== CART ===============*/
+
 .cart {
   position: fixed;
   background-color: var(--body-color);
@@ -958,13 +942,13 @@ body.dark-theme {
   font-weight: var(--font-medium);
 }
 
-/* Show cart */
+
 .show-cart {
   right: 0;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
+
 @media screen and (max-width: 320px) {
   .container {
     margin-left: var(--mb-1);
@@ -998,7 +982,7 @@ body.dark-theme {
   }
 }
 
-/* For medium devices */
+
 @media screen and (min-width: 576px) {
   .home__img-bg {
     width: 340px;
@@ -1175,7 +1159,7 @@ body.dark-theme {
   }
 }
 
-/* For large devices */
+
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
